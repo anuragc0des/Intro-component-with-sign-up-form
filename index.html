@@ -14,6 +14,8 @@
 
     <title>Frontend Mentor | Intro component with sign up form</title>
 
+    <link rel="stylesheet" href="./style.css" />
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -24,48 +26,64 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
-
-    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main>
-      <article class="left">
-        <h2>Learn to code by <br />watching others</h2>
+    <main class="container">
+      <div class="text">
+        <h1>Learn to code by watching others</h1>
 
         <p>
           See how experienced developers solve problems in real-time. Watching
           scripted tutorials is great, but understanding how developers think is
           invaluable.
         </p>
-      </article>
+      </div>
 
-      <article class="right">
-        <p class="offer">
+      <div class="form-section">
+        <p class="free-trial">
           <span>Try it free 7 days</span> then $20/mo. thereafter
         </p>
 
-        <form>
-          <input type="text" placeholder="First Name" required />
-          <input type="text" placeholder="Last Name" required />
-          <input type="text" placeholder="Email Address" required />
-          <input type="password" placeholder="Password" required />
+        <form action="#" id="form">
+          <div class="inputfield">
+            <input type="text" placeholder="First Name" />
+            <span></span>
+          </div>
+
+          <div class="inputfield">
+            <input type="text" placeholder="last Name" />
+            <span></span>
+          </div>
+
+          <div class="inputfield">
+            <input type="text" placeholder="Email Address" />
+            <span></span>
+          </div>
+
+          <div class="inputfield">
+            <input type="password" placeholder="Password" />
+            <span></span>
+          </div>
 
           <button>Claim your free trial</button>
-          <p>
-            By clicking the button, you are agreeing to our
-            <span>Terms and Services</span>
-          </p>
+
+          <div class="terms">
+            <p>
+              By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </p>
+          </div>
         </form>
-      </article>
+      </div>
     </main>
 
-    <!-- <footer>
+    <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
       </p>
-    </footer> -->
+    </footer>
   </body>
 </html>
